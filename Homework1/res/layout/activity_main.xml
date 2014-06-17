@@ -1,0 +1,206 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:gravity="start"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/_numberSevenButton"
+        android:layout_alignTop="@+id/_resultTextView"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="28dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/_divideButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/divide" 
+        />
+
+    <ImageButton
+        android:id="@+id/_equalButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/_divideButton"
+        android:src="@drawable/equal" />
+
+    <ImageButton
+        android:id="@+id/_numberZeroButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/_numberTwoButton"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/number_zero" />
+
+    <ImageButton
+        android:id="@+id/_pointButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/_numberZeroButton"
+        android:src="@drawable/point" />
+
+    <ImageButton
+        android:id="@+id/_multiplyButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/_divideButton"
+        android:layout_toRightOf="@+id/_equalButton"
+        android:src="@drawable/multiply" />
+
+    <ImageButton
+        android:id="@+id/_numberThreeButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/_equalButton"
+        android:layout_alignTop="@+id/_multiplyButton"
+        android:src="@drawable/number_three" />
+
+    <ImageButton
+        android:id="@+id/_numberTwoButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignTop="@+id/_numberThreeButton"
+        android:layout_toLeftOf="@+id/_numberThreeButton"
+        android:src="@drawable/number_two" />
+
+    <ImageButton
+        android:id="@+id/_numberOneButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/_numberTwoButton"
+        android:src="@drawable/number_one" />
+
+    <ImageButton
+        android:id="@+id/_minusButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/_multiplyButton"
+        android:layout_toRightOf="@+id/_numberThreeButton"
+        android:src="@drawable/minus" />
+
+    <ImageButton
+        android:id="@+id/_numberFiveButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignTop="@+id/_minusButton"
+        android:layout_toRightOf="@+id/_numberTwoButton"
+        android:src="@drawable/number_five" />
+
+    <ImageButton
+        android:id="@+id/_numberFourButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignLeft="@+id/_numberEightButton"
+        android:layout_alignTop="@+id/_numberFiveButton"
+        android:src="@drawable/number_four" />
+
+    <ImageButton
+        android:id="@+id/_numberSixButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignTop="@+id/_numberFourButton"
+        android:layout_toLeftOf="@+id/_numberFourButton"
+        android:src="@drawable/number_six" />
+
+    <ImageButton
+        android:id="@+id/_plusButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/_minusButton"
+        android:layout_toRightOf="@+id/_numberFiveButton"
+        android:src="@drawable/plus" />
+
+    <ImageButton
+        android:id="@+id/_numberNineButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignTop="@+id/_plusButton"
+        android:layout_toRightOf="@+id/_numberFourButton"
+        android:src="@drawable/number_nine" />
+
+    <ImageButton
+        android:id="@+id/_numberEightButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/_numberFiveButton"
+        android:layout_toRightOf="@+id/_numberSevenButton"
+        android:src="@drawable/number_eight" />
+
+    <ImageButton
+        android:id="@+id/_numberSevenButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignTop="@+id/_numberEightButton"
+        android:layout_toLeftOf="@+id/_numberTwoButton"
+        android:src="@drawable/number_seven" />
+
+    <TextView
+        android:id="@+id/_resultTextView"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/_inputTextView"
+        android:background="@drawable/result_text_view_background"
+        android:maxEms="30"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:text="          "
+        android:textColor="#CC3300"
+        android:textSize="60sp"
+        android:width="250px" />
+
+    <TextView
+        android:id="@+id/_inputTextView"
+        android:layout_width="280dp"
+        android:layout_height="62dp"
+        android:layout_above="@+id/_clearButton"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/input_text_view_background"
+        android:lines="3"
+        android:maxEms="30"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:text="        "
+        android:textColor="#990000"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/_clearButton"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/_numberEightButton"
+        android:layout_toLeftOf="@+id/_numberEightButton"
+        android:src="@drawable/clear" />
+
+    <ImageView
+        android:id="@+id/_designedImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/design" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="80dp"
+        android:layout_height="62dp"
+        android:layout_alignTop="@+id/_inputTextView"
+        android:layout_toLeftOf="@+id/_inputTextView"
+        android:src="@drawable/formula" />
+
+</RelativeLayout>
